@@ -37,5 +37,9 @@ public class MemberService {
                 .collect(Collectors.toList());
     }
 
+    public void deleteById(Long id) {
+        memberRepo.deleteById(id);
+    }
+
 
 }

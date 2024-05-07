@@ -25,6 +25,8 @@ bin/
 
 *.gradle
 *.properties
+build.gradle
+application.properties
 
 out/
 !**/src/main/**/out/

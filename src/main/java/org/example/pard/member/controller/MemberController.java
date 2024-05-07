@@ -35,5 +35,9 @@ public class MemberController {
         return memberService.findById(id);
     }
 
-
+    @DeleteMapping("/{id}")
+    public String deleteById(@PathVariable Long id) {
+        memberService.deleteById(id);
+        return "삭제됨";
+    }
 }
